@@ -1,0 +1,40 @@
+-- schema.sql for F1 project
+CREATE DATABASE IF NOT EXISTS `f1db` CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+USE `f1db`;
+
+CREATE TABLE locations (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(255) NOT NULL,
+  address VARCHAR(512) NOT NULL,
+  ip_address VARCHAR(45),
+  google_maps_link VARCHAR(1024),
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+CREATE TABLE phones (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  location_id INT NOT NULL,
+  phone_index TINYINT NOT NULL,
+  phone_number VARCHAR(50),
+  FOREIGN KEY (location_id) REFERENCES locations(id) ON DELETE CASCADE,
+  UNIQUE (location_id, phone_index)
+);
+
+CREATE TABLE devices (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  location_id INT NOT NULL,
+  code VARCHAR(100) NOT NULL,
+  name VARCHAR(255) NOT NULL,
+  ip_address VARCHAR(45),
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (location_id) REFERENCES locations(id) ON DELETE CASCADE
+);
+
+CREATE TABLE notes (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  location_id INT NOT NULL,
+  content TEXT NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (location_id) REFERENCES locations(id) ON DELETE CASCADE
+);

@@ -1,0 +1,62 @@
+/* --- Plik style.css dla projektu F1 --- */
+
+/* Kafelki */
+.card {
+    margin-bottom: 1rem;       /* odstęp między kafelkami */
+    border-radius: 0.5rem;     /* zaokrąglenie rogów */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.08); /* delikatny cień */
+}
+
+/* Card body mniejsza czcionka i zwarta interlinia */
+.card-body {
+    font-size: 0.6rem;    /* mniejsza czcionka */
+    line-height: 1.1;      /* mniejsza interlinia */
+    padding: 0.75rem;      /* mniej miejsca wewnątrz kafelka */
+}
+
+/* P dla tekstu w kafelku */
+.card-body p {
+    margin-bottom: 0.25rem; /* mniejsze odstępy między linijkami */
+}
+
+/* Telefony w jednej linii */
+.card-body .badge {
+    font-size: 0.75rem;    /* mniejsze badge */
+    margin-right: 0.25rem;
+}
+
+/* Kafelki w wierszu */
+.row.row-cols-1.row-cols-md-3.g-4 {
+    row-gap: 0.75rem;
+    column-gap: 0.75rem;
+}
+
+/* Linki w kafelku */
+.card-body a {
+    font-size: 0.85rem;
+    text-decoration: none;
+}
+
+/* Card footer przyciski */
+.card-footer {
+    padding: 0.5rem 0.75rem;
+}
+
+.card-footer .btn {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.5rem;
+}
+
+/* Przycisk "Dodaj lokalizację" */
+.btn-success {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.75rem;
+}
+
+/* Opcjonalnie: skrócone notatki */
+.card-body .notes-summary {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

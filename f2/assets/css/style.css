@@ -1,0 +1,203 @@
+body { padding-bottom: 40px; }
+.card { box-shadow: 0 0 6px rgba(0,0,0,0.05); }
+.errors { color: red; }
+.card-body {
+    font-size: 0.85rem;    /* mniejsza czcionka */
+    line-height: 1.1;      /* mniejsza interlinia */
+    padding: 0.75rem;
+}
+
+/* Nagłówki w kafelkach */
+.card-body h5 {
+    font-size: 1rem;       /* zmniejszony nagłówek */
+    margin-bottom: 0.25rem;
+}
+
+/* Przyciski w kafelkach */
+.card-footer .btn {
+    font-size: 0.75rem;    /* mniejsza czcionka w przyciskach */
+    padding: 0.25rem 0.5rem;
+}
+.card-body h5 {
+    font-size: 1rem !important;      /* wymusza nadpisanie Bootstrap */
+    font-weight: 500 !important;
+}
+
+.card-body p {
+    font-size: 0.85rem !important;
+    line-height: 1.1 !important;
+    margin-bottom: 0.25rem !important;
+}
+
+.card-footer .btn {
+    font-size: 0.75rem !important;
+    padding: 0.25rem 0.5rem !important;
+}
+/* Cała karta */
+.card.card-sm {
+    font-size: 0.85rem !important;
+    line-height: 1.1 !important;
+    padding: 0.5rem !important;
+}
+
+/* Nagłówek w kafelku */
+.card.card-sm h5 {
+    font-size: 1rem !important;
+    font-weight: 500 !important;
+    text-transform: none !important;
+}
+
+/* Tekst p w kafelku */
+.card.card-sm p {
+    margin-bottom: 0.25rem !important;
+}
+
+/* Przyciski w kafelku */
+.card.card-sm .btn {
+    font-size: 0.75rem !important;
+    padding: 0.25rem 0.5rem !important;
+}
+
+/* Badge w telefonach */
+.card.card-sm .badge {
+    font-size: 0.7rem !important;
+    margin-right: 0.2rem !important;
+}
+/* Karty kompaktowe */
+.card.card-sm {
+  font-size: 0.8rem !important;
+  line-height: 1.1 !important;
+  padding: 0.4rem !important;
+}
+
+/* Nagłówek i ikony w jednej linii */
+.card-title {
+  font-size: 0.9rem !important;
+  font-weight: 600 !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Ikony akcji */
+.action-icons i {
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.action-icons a,
+.action-icons button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Zmniejszone p i badge */
+.card-text {
+  margin-bottom: 0.25rem !important;
+  font-size: 0.75rem !important;
+}
+
+.badge {
+  font-size: 0.7rem !important;
+  margin-right: 0.2rem;
+}
+/* Nagłówek karty */
+.card-title {
+    font-size: 0.9rem !important;   /* zmniejszony nagłówek */
+    font-weight: 600 !important;
+    line-height: 1.1 !important;    /* zmniejszona dolna interlinia */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Link w nagłówku karty */
+.card-title a {
+    color: #000 !important;           /* czarny tekst */
+    text-decoration: none !important; /* usuwa podkreślenie */
+}
+
+.card-title a:hover {
+    color: #000 !important;           /* kolor nie zmienia się po najechaniu */
+    text-decoration: none !important;
+}
+/* Kafelek – nagłówek i reszta danych */
+.card-title {
+    font-size: 0.9rem !important;
+    font-weight: 600 !important;
+    line-height: 1.1 !important;   /* interlinia samego nagłówka */
+    margin-bottom: 0.2rem !important; /* minimalny odstęp do paragrafów poniżej */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Paragrafy w kafelku – zmniejszenie marginesu */
+.card-text {
+    font-size: 0.75rem !important;
+    margin-bottom: 0.2rem !important; /* minimalny odstęp między linijkami */
+}
+.action-icons {
+    margin-bottom: 0 !important; /* usuwa dolny margines */
+    display: flex;
+    align-items: center;
+}
+.action-icons {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* równe odstępy między ikonami */
+}
+
+.action-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none !important;
+  background: none !important;
+  box-shadow: none !important;
+}
+
+.action-icon i {
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+/* Usuń wszystkie odstępy formularza i przycisku */
+.action-icons form {
+  margin: 0 !important;
+  padding: 0 !important;
+  display: flex;
+  align-items: center;
+}
+
+.action-icons form button {
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 1 !important;
+  border: none !important;
+  background: none !important;
+  box-shadow: none !important;
+}
+
+.action-icons form .bi-trash {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.text-primary i.bi-sign-turn-right { color: #007bff !important; }
+.text-primary i.bi-pencil { color: #198754 !important; }
+.text-primary i.bi-trash { color: #dc3545 !important; }
+
+.action-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  color: inherit;
+}
